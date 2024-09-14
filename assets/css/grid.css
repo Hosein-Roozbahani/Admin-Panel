@@ -1,0 +1,11 @@
+.header {
+    background-color:rgb(228, 165, 81);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
