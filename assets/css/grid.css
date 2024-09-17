@@ -1,5 +1,4 @@
 .header {
-    background-color:rgb(228, 165, 81);
     position: fixed;
     top: 0;
     right: 0;
@@ -84,4 +83,31 @@
     color: green;
    margin-top: .8rem;
 }
-
+.header-avatar{
+    width: 2rem;
+    height: 2rem;
+    margin: .2rem;
+}
+.header-username{
+    color: #333333;
+    font-size: .8rem;
+}
+.header-icon{
+    color: #333333;
+}
+.header-profile{
+    left: 0;
+    width: 13rem;
+    height: auto;
+    margin-top: .2rem;
+    z-index: 10000;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: 0 1px 20px 0 rgba(70, 90, 100, .08);
+    display: none;
+}
+.header-profile-link{
+    padding: .4rem;
+    font-size: .8rem;
+    line-height: 1.4rem;
+}
