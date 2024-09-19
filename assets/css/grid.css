@@ -8,27 +8,33 @@
     justify-content: space-around;
     align-items: stretch;
 }
-.logo{
+
+.logo {
     max-height: 3.5rem;
 }
-.sidebar-header{
+
+.sidebar-header {
     flex: 0 0 14rem;
 }
-.body-header{
+
+.body-header {
     width: calc(100% - 14rem);
 }
-.search-area{
+
+.search-area {
     background-color: #dcdcdc;
     padding: .3rem .6rem;
     border-radius: 2rem;
 }
-.search-input{
-    background-color: rgba(0, 0, 0, 0) ;
+
+.search-input {
+    background-color: rgba(0, 0, 0, 0);
     outline: none;
     border: none;
     margin: 0 .6rem;
 }
-.header-notification{
+
+.header-notification {
     position: absolute;
     left: 0;
     margin-top: .2rem;
@@ -38,64 +44,77 @@
     box-shadow: 0 1px 20px 0 rgba(70, 90, 100, .08);
     display: none;
 }
-.notification-img{
+
+.notification-img {
     width: 3rem;
     border-radius: .3rem;
 }
-.notification-user{
+
+.notification-user {
     font-size: 1rem;
     font-weight: bold;
     margin-top: .3rem;
 }
-.notification-text{
+
+.notification-text {
     font-size: .8rem;
     line-height: 2rem;
 }
-.notification-time{
+
+.notification-time {
     font-size: .7rem;
     line-height: .7rem;
     color: #919aa3;
 }
-.header-comment{
+
+.header-comment {
     left: 0;
-    max-height: 100vh ;
+    max-height: 100vh;
     width: 18rem;
     background-color: #fff;
     color: #000000;
     box-shadow: 0 1px 20px 0 rgba(70, 90, 100, .08);
     display: none;
 }
-.search-comment{
-    border: 1px solid rgba(0, 0 ,0 ,0.125 );
+
+.search-comment {
+    border: 1px solid rgba(0, 0, 0, 0.125);
 }
-.header-comment-wrapper{
+
+.header-comment-wrapper {
     line-height: 0;
     overflow: auto;
     max-height: calc(100vh - 3rem);
 }
-.comment-user{
+
+.comment-user {
     font-size: .75rem;
     font-weight: bold;
     margin-top: .8rem;
 }
-.comment-user-status{
+
+.comment-user-status {
     font-size: .6rem;
     color: green;
-   margin-top: .8rem;
+    margin-top: .8rem;
 }
-.header-avatar{
+
+.header-avatar {
     width: 2rem;
     height: 2rem;
     margin: .2rem;
 }
-.header-username{
+
+.header-username {
     color: #333333;
     font-size: .8rem;
 }
-.header-icon{
+
+.header-icon {
     color: #333333;
 }
-.header-profile{
+
+.header-profile {
     left: 0;
     width: 13rem;
     height: auto;
@@ -106,8 +125,120 @@
     box-shadow: 0 1px 20px 0 rgba(70, 90, 100, .08);
     display: none;
 }
-.header-profile-link{
+
+.header-profile-link {
     padding: .4rem;
     font-size: .8rem;
     line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        display: block;
+    }
+
+    .sidebar-header {
+        width: 100%;
+    }
+
+    .body-header {
+        display: none;
+        width: 100%;
+    }
+}
+
+.body-container {
+    margin-top: 3.5rem;
+    z-index: 100000;
+    display: flex;
+}
+
+.sidebar {
+    width: 14rem;
+    background-color: #404E67;
+    color: #dcdcdc;
+}
+
+.sidebar-container {
+    height: calc(100vh - 3.5rem);
+    z-index: 10000;
+}
+
+.sidebar-wrapper {
+    padding: 1rem 0;
+}
+
+.sidebar-part-title {
+    font-size: .9rem;
+    padding: 0 1rem;
+    color: #999999;
+    margin-top: 1rem;
+}
+
+.sidebar-link {
+    color: #dcdcdc;
+    font-size: .8rem;
+    display: block;
+    margin-top: 1rem;
+    padding: .4rem 1rem;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+.sidebar-link:hover{
+    text-decoration: none;
+    transition: all .5s;
+    color: #FE8A7D;
+}
+.sidebar-link > i{
+    padding-left: .5rem;
+}
+.sidebar-group-link{
+    font-size: .8rem;
+    padding: .4rem 0;
+    margin-top: 1rem;
+    color: #dcdcdc;
+}
+.sidebar-dropdown{
+    display: none;
+    margin-top: .5rem;
+    height: 0;
+}
+.sidebar-dropdown a,button {
+    display: block;
+    padding: .2rem 1rem;
+    color: #dcdcdc;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    background-color: inherit;
+    transition: all .5s;
+}
+.sidebar-dropdown a::before, button::before{
+    content: '>';
+    margin: .8rem;
+}
+.sidebar-dropdown a:hover, button:hover{
+    color: #FE8A7D;
+}
+.sidebar-group-link-active{
+    border-right: #FE8A7D 3px solid;
+}
+.sidebar-group-link-active > .sidebar-dropdown {
+    display: block;
+    height: auto;
+}
+.sidebar-group-link > .sidebar-dropdown-toggle > i{
+    padding-left: .5rem;
+}
+.arrow-left{
+    padding-right: .5rem;
+}
+.sidebar-dropdown-toggle{
+    cursor: pointer;
+    padding: .2rem 1rem;
+    transition: all .5s;
+}
+.sidebar-dropdown-toggle:hover span {
+    color: #fff;
 }
