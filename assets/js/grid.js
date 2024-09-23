@@ -60,4 +60,15 @@ $(document).ready(function () {
     $('#header-profile-toggle').click(function () {
         $('#header-profile').fadeToggle();
     })
+
+    $('.sidebar-group-link').click(function (){
+
+        $('.sidebar-group-link').removeClass('sidebar-group-link-active');
+        $('.sidebar-group-link').children('sidebar-dropdown-toggle').children('.angle').removeClass('fa-angle-down');
+        $('.sidebar-group-link').children('sidebar-dropdown-toggle').children('.angle').addClass('fa-angle-left');
+
+        $(this).addClass('sidebar-group-link-active');
+        $(this).children('sidebar-dropdown-toggle').children('.angle').removeClass('fa-angle-left');
+        $(this).children('sidebar-dropdown-toggle').children('.angle').addClass('fa-angle-down');
+    })
 })
