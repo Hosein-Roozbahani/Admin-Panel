@@ -19,6 +19,7 @@
 
 .body-header {
     width: calc(100% - 14rem);
+    background-color: #fff;
 }
 
 .search-area {
