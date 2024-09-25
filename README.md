@@ -8,5 +8,5 @@
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![JQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
 
-ypu can see the demo of this project in [URL](https://hosein-roozbahani.github.io/Admin-Panel/)
+you can see the demo of this project in [URL](https://hosein-roozbahani.github.io/Admin-Panel/)
 
